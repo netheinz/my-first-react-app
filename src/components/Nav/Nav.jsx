@@ -7,7 +7,8 @@ import Style from "./Nav.module.scss";
 const navArray = [
     { name: "Forside" },
     { name: "About" },
-    { name: "Kontakt" }
+    { name: "Kontakt" },
+    { name: "Partnere" }
   ]
 
 const Nav = props => {
