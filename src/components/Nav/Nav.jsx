@@ -32,7 +32,7 @@ const Nav = props => {
             {
               navArray.map((navelement, i) => {
                 return (
-                <li key={navelement.name}><a href="#"> {i}. {navelement.name} </a></li>
+                <li key={navelement.name}><a href="#">{navelement.name}</a></li>
                 )
               })
             }

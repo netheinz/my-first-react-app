@@ -8,6 +8,8 @@ import Nav from "./components/Nav/Nav";
 import Main from "./components/Main/Main";
 // import custom filler component
 import Filler from "./components/Filler/Filler";
+// import router component
+import Router from "./components/Router/routes";
 // import App Css file
 import './App.css';
 
@@ -19,7 +21,9 @@ function App() {
         <Nav />
       </Header>
       <Main>
-        <Filler />
+        <Router />
+        {/* <Filler /> */}
+
       </Main>
     </>
   );
