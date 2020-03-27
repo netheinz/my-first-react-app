@@ -1,37 +1,16 @@
 import React from "react";
+// Henter de værktøj som vi skal bruge i forb med vores router
 import { Switch, Route } from 'react-router-dom';
-import Home from '../Pages/Home/Home';
-import About from '../Pages/About/About';
-import Contact from '../Pages/Contact/Contact';
-
-const routes = [
-    {
-        name: "Home",
-        path: "/",
-        exact: true,
-        component: Home
-    },
-    {
-        name: "About",
-        path: "/about",
-        exact: true,
-        component: About
-    },
-    {
-        name: "Contact",
-        path: "/contact",
-        exact: true,
-        component: Contact
-    }]
+// Henter routes array
+import routes from './routes';
 
 export default function Router(props) {
     return (
       <Switch>
         {/*
-                <Route path="/" exact={true} render={() => <h1>Velkommen</h1>} />
-                <Route path="/about" render={() => <h1>Om os</h1>} />
-                <Route path="/contact" render={() => <h1>Kontakt os</h1>} />
-            */}
+            Eksempel på analog route
+            <Route path="/contact" render={() => <h1>Kontakt os</h1>} />
+        */}
         {routes.map(route => (
           <Route
             key={route.path}
@@ -40,6 +19,7 @@ export default function Router(props) {
             component={route.component}
           />
         ))}
+        {/* Route til 404 Not found */}
         <Route render={() => <h1>Siden findes ikke</h1>} />
       </Switch>
     );
