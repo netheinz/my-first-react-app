@@ -1,8 +1,11 @@
+import React from 'react';
 // Hent forskellige componenter
 import Home from '../Pages/Home/Home';
 import About from '../Pages/About/About';
 import Contact from '../Pages/Contact/Contact';
-import Jokes from '../Pages/Jokes/Jokes';
+
+// Code Splitting
+const Jokes = React.lazy(() => import("../Pages/Jokes/Jokes"));
 
 // Deklarer array til routes
 const routes = [

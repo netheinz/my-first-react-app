@@ -1,5 +1,5 @@
 // import react module
-import React from 'react';
+import React, { Suspense } from 'react';
 // import custom header component
 import Header from "./components/Header/Header";
 // import custom nav component
@@ -21,9 +21,10 @@ function App() {
         <Nav />
       </Header>
       <Main>
-        <Router />
-        {/* <Filler /> */}
-
+        <Suspense fallback={<div>Loading...</div>}>
+          <Router />
+          {/* <Filler /> */}
+        </Suspense>
       </Main>
     </>
   );
