@@ -8,7 +8,7 @@ import Styles from "./Header.module.scss";
 export default function Header(props) {
     // Styles hentes med objekt.selectorname
     return (
-        <header class={Styles.mainHeader}>
+        <header className={Styles.mainHeader}>
             {props.children}
         </header>
     )

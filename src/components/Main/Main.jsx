@@ -9,7 +9,7 @@ export default function Main(props) {
     return (
       <main>
         <h1>Main Component</h1>
-        <div class="container"></div>
+        <div className="container"></div>
         {props.children}
       </main>
     );

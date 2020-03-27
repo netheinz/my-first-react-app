@@ -2,6 +2,7 @@
 import Home from '../Pages/Home/Home';
 import About from '../Pages/About/About';
 import Contact from '../Pages/Contact/Contact';
+import Jokes from '../Pages/Jokes/Jokes';
 
 // Deklarer array til routes
 const routes = [
@@ -16,6 +17,12 @@ const routes = [
     path: "/about",
     exact: true,
     component: About
+},
+{
+    name: "Jokes",
+    path: "/jokes",
+    exact: true,
+    component: Jokes
 },
 {
     name: "Contact",
