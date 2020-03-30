@@ -6,6 +6,8 @@ import Header from "./components/Header/Header";
 import Nav from "./components/Nav/Nav";
 // import custom main component
 import Main from "./components/Main/Main";
+// import custom footer component
+import Footer from "./components/Footer/Footer";
 // import custom filler component
 import Filler from "./components/Filler/Filler";
 // import router component
@@ -21,11 +23,13 @@ function App() {
         <Nav />
       </Header>
       <Main>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div>Loading...</div>}>          
           <Router />
-          {/* <Filler /> */}
+          {/* Filler komponent er et eksempel på hvordan vi bruger klasser i React */}
+          <Filler />
         </Suspense>
       </Main>
+      <Footer />
     </>
   );
 }

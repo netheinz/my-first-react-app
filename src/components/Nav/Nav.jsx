@@ -66,7 +66,7 @@ const Nav = props => {
 
   //Returnerer knap med click event og betingelse for visning
   return (
-    <nav ref={navRef}>
+    <nav ref={navRef} className={Style.nav}>
       <button onClick={handleOpen}>Åben/Luk nav</button>
       {/* Short circuit: open && () */}
       {open && (

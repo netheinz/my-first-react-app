@@ -32,5 +32,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "moment": "^2.24.0",
+    "react-hook-form": "^5.2.0",
+    "recharts": "^1.8.5",
+    "use-resize-observer": "^6.0.0"
   }
 }

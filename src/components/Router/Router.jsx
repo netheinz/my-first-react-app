@@ -10,6 +10,9 @@ export default function Router(props) {
         {/*
             Eksempel på analog route
             <Route path="/contact" render={() => <h1>Kontakt os</h1>} />
+
+            Herunder mappes array routes og udskrives a la ovenstående.
+        
         */}
         {routes.map(route => (
           <Route

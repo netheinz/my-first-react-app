@@ -6,6 +6,7 @@ import Contact from '../Pages/Contact/Contact';
 
 // Code Splitting
 const Jokes = React.lazy(() => import("../Pages/Jokes/Jokes"));
+const Corona = React.lazy(() => import("../Pages/Corona/Corona"));
 
 // Deklarer array til routes
 const routes = [
@@ -20,6 +21,12 @@ const routes = [
     path: "/about",
     exact: true,
     component: About
+},
+{
+    name: "Corona",
+    path: "/corona",
+    exact: true,
+    component: Corona
 },
 {
     name: "Jokes",

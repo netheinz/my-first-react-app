@@ -21,9 +21,9 @@ export default class Filler extends React.Component {
     // Renderer resultatet
     render() {
         return (
-            <div>
+            <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat praesentium impedit quibusdam magni odit voluptate deserunt eos illo error, atque rem sunt! Cupiditate hic repudiandae blanditiis ipsa placeat, tempore fugiat?
-            </div>
+            </p>
         )
     }
 }
